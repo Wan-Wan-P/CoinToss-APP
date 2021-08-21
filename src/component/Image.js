@@ -6,6 +6,7 @@ class Image extends Component {
     }
 
     render() {
+        console.log("inside image component:");
         console.log(this.props)
         return (
             <img style={{width: "10%"}}

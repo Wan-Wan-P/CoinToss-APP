@@ -29,17 +29,25 @@ class CoinToss extends React.Component {
                 head: {
                     name: this.state.head.name,
                     number: this.state.head.number + 1,
+                    image: this.state.head.image
                 },
                 result: this.state.head.image
             })
-        } else {
+            console.log("inside handleTossUpdate head");
+            console.log(this.state);
+            console.log(this.state.result);
+         } else {
             this.setState({
                 tail: {
                     name: this.state.tail.name,
                     number: this.state.tail.number + 1,
+                    image: this.state.tail.image
                 },
                 result: this.state.tail.image
             })
+            console.log("inside handleTossUpdate tail");
+            console.log(this.state);
+            console.log(this.state.result);
         }
     }
 

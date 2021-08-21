@@ -7,6 +7,7 @@ class Number extends Component {
 
     render() {
 
+        console.log("inside number component")
         console.log(this.props)
         return (
             <div>
