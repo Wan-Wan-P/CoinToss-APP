@@ -8,8 +8,8 @@ class Image extends Component {
     render() {
         console.log(this.props)
         return (
-            <img
-                src={this.props.url}
+            <img style={{width: "10%"}}
+                src={this.props.result.head.show ?this.props.result.head.image:this.props.result.tail.image}
             />
         );
     }
