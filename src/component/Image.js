@@ -8,7 +8,7 @@ class Image extends Component {
     render() {
         console.log(this.props)
         return (
-            <img
+            <img style={{width: "10%"}}
                 src={this.props.url}
             />
         );
